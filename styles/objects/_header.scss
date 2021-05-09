@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  text-align: center;
+  color: var(--c-gray);
+  
+  &__title {
+    font-size: 1.6em;
+    margin: 0;
+  }
+
+  &__subtitle {
+    font-size: 1.6em;
+    margin: 0;
+    color: var(--c-black);
+  }
+}
