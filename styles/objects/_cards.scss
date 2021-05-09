@@ -1,4 +1,15 @@
 .cards {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  min-height: 395px;
+
+  @media (min-width: $large) {
+    height: 80%;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $large) {
+    height: 90%;
+  }
 }

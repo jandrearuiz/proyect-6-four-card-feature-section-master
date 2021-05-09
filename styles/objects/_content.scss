@@ -1,11 +1,13 @@
 .content {
+  min-height: 80%;
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  justify-content: space-between;
+  min-height: 815px;
 
-  @media (min-width: $medium) {
+  @media (min-width: $large) {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 }
