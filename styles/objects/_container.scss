@@ -1,13 +1,21 @@
 .container {
   display: flex;
   flex-direction: column;
-  font-family: var(--f-oxygen);
   line-height: 1.5;
-  margin: 5px;
+  margin: 0 5%;
 
   @media (min-width: $large) {
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  @media (min-width: $xxlarge) {
+    max-width: 1080px;
+  }
+
+  @media (min-width: $xlarge) {
+    max-width: 1200px;
   }
 }

@@ -1,3 +1,5 @@
+$colors: blue, red, yelloww, green;
+
 .card {
   border: 0.5px solid transparent;
   display: flex;
@@ -6,7 +8,6 @@
   border-radius: 5px;
   box-shadow: 2px 2px 5px 5px var(--c-lightgray);
   color: var(--c-gray);
-  justify-content: center;
 
   &__title {
     margin: 0;
@@ -21,36 +22,26 @@
     width: 45px;
     height: 45px;
     align-self: flex-end;
-    margin: 20px;
+    margin-top: auto;
+  }
 
-    @media (min-width: $large) {
-      margin-top: 60px;
+  @each $color in $colors { 
+    &.#{$color} {
+      border-top: 5px solid var(--c-#{$color}); 
     }
   }
 
-  &.blue {
-    border-top: 5px solid var(--c-blue);
-  }
-
-  &.red {
-    border-top: 5px solid var(--c-red);
-  }
-
-  &.yellow {
-    border-top: 5px solid var(--c-yellow);
-  }
-
-  &.green {
-    border-top: 5px solid var(--c-green);
-  }
-
   @media (min-width: $large) {
-    width: 250px;
+    max-width: 200px;
     height: 200px;
   }
 
+  @media (min-width: $xxlarge) {
+    max-width: 280px;
+  }
+
   @media (min-width: $xlarge) {
-    width: 350px;
+    max-width: 340px;
   }
 
 }

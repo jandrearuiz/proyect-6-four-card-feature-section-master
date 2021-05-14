@@ -3,11 +3,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 815px;
+  min-height: 675px;
 
   @media (min-width: $large) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 }
